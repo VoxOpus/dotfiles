@@ -124,8 +124,9 @@ elif [[ "$IS_PROOT" == true ]]; then
     alias autoremove='apt autoremove -y'
 
     # Open-WebUI
-    alias ouiserve='source ~/projects/open-webui/.venv/bin/activate && open-webui serve'
-    alias ouistop='deactivate'
+    alias ouivenva='source ~/projects/open-webui/.venv/bin/activate'
+    alias ouiserve='open-webui serve'
+    alias ouivenvd='deactivate'
 fi
 
 # --- 6. INITIALISIERUNG ---
