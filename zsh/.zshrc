@@ -113,13 +113,21 @@ elif [[ "$IS_TERMUX" == true ]]; then
     alias opull='ollama pull'
     alias orm='ollama rm'
 
+	# PRoot
+	alias ubuntu='proot-distro login ubuntu'
+
 elif [[ "$IS_PROOT" == true ]]; then
     # --- PROOT (Ubuntu in Termux) ---
     # In PRoot sind wir root, daher kein sudo nötig
     alias update='apt update && apt upgrade -y'
     alias install='apt install'
     alias autoremove='apt autoremove -y'
+
+    # Open-WebUI
+    alias ouiserve='source ~/projects/open-webui/.venv/bin/activate && open-webui serve'
+    alias ouistop='deactivate'
 fi
+
 # --- 6. INITIALISIERUNG ---
 source $ZSH/oh-my-zsh.sh
 
