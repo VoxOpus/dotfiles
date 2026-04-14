@@ -105,6 +105,14 @@ elif [[ "$IS_TERMUX" == true ]]; then
     alias install='pkg install'
     # pkg benötigt kein autoremove
 
+    # Ollama
+	alias oserve='ollama serve'
+	alias ostop='ollama stop'
+    alias ols='ollama list'
+    alias orun='ollama run'
+    alias opull='ollama pull'
+    alias orm='ollama rm'
+
 elif [[ "$IS_PROOT" == true ]]; then
     # --- PROOT (Ubuntu in Termux) ---
     # In PRoot sind wir root, daher kein sudo nötig
