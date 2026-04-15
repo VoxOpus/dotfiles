@@ -25,25 +25,16 @@ if [[ "$IS_PROOT" == false ]]; then
 fi
 
 # --- 2. UMGEBUNGSVARIABLEN & PFADE ---
+export ZSH="$HOME/.oh-my-zsh"
+export EDITOR='micro'
+export VISUAL='micro'
 
-# Automatische Erkennung der Umgebung
-if [[ -f /etc/os-release ]] && grep -q "Ubuntu" /etc/os-release; then
-    # Wir sind in PROOT UBUNTU
-    # Hier wichtig: Standard-Pfade zuerst, aber :$PATH am Ende nicht vergessen!
-    export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
-    
-    # Falls opencode auch in Ubuntu verfügbar sein soll (falls Home gemountet ist):
-    [[ -d "$HOME/.opencode/bin" ]] && export PATH="$HOME/.opencode/bin:$PATH"
-
-elif [[ "$PREFIX" == *com.termux* ]]; then
-    # Wir sind direkt in TERMUX
-    export PATH="$HOME/.opencode/bin:$PATH"
-fi
-
-# Laptop-Check (bleibt wie gehabt)
-if [[ "$IS_LAPTOP" == "true" ]]; then
-    export PATH="/home/vox/.opencode/bin:$PATH"
+if [[ "$IS_LAPTOP" == true ]]; then
     export NVM_DIR="$HOME/.nvm"
+    export PATH="/home/vox/.opencode/bin:$PATH"
+elif [[ "$IS_PROOT" == true ]]; then
+    # Spezifisch für glibc-Kompilierung in PRoot
+    export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
 fi
 
 # --- 3. OH-MY-ZSH KONFIGURATION ---
@@ -143,6 +134,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Powerlevel10k Konfiguration laden
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# opencode
-export PATH=/data/data/com.termux/files/home/.opencode/bin:$PATH
