@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Define the hostname of your main Arch laptop
+TARGET_HOSTNAME="arch-laptop"
+CURRENT_HOSTNAME=$(uname -n)
+
+# Check if the commit is being made on the main Arch laptop
+if [[ "$CURRENT_HOSTNAME" != "$TARGET_HOSTNAME" ]]; then
+    echo "pre-commit: Not on the main Arch system ($TARGET_HOSTNAME). Skipping package list backup."
+    exit 0
+fi
+
+# Check if pacman is available (fallback security)
+if ! command -v pacman &> /dev/null; then
+    echo "pre-commit: 'pacman' command not found. Skipping package list backup."
+    exit 0
+fi
+
+echo "pre-commit: Main Arch system detected. Updating package lists..."
+
+# Export official repository packages
+pacman -Qqen > pkglist_repo.txt
+
+# Export AUR packages
+pacman -Qqem > pkglist_aur.txt
+
+# Stage the updated package lists so they are included in the current commit
+git add pkglist_repo.txt pkglist_aur.txt
+
+echo "pre-commit: Package lists successfully updated and staged."
+exit 0
