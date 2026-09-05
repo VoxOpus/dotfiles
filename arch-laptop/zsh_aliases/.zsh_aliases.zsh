@@ -1,1 +1,1 @@
-alias update='yay -Syu'
+
