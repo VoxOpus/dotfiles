@@ -1,0 +1,22 @@
+{
+    "editor.fontSize": 12,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "github.copilot.chat.organizationCustomAgents.enabled": false,
+    "github.copilot.chat.organizationInstructions.enabled": false,
+    "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
+    "chat.tips.enabled": false,
+    "workbench.startupEditor": "none",
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.iconTheme": "catppuccin-mocha",
+    "security.workspace.trust.startupPrompt": "always"
+}
