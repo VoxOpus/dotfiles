@@ -1,5 +1,3 @@
 alias update='pkg update && pkg upgrade -y'
 
-# Start or Stop X11 and XFCE
-alias startdesk="nohup ~/.local/bin/startxfce4 > /dev/null 2>&1 &"
-alias stopdesk="kill -9 \$(pgrep -f 'termux.x11') 2>/dev/null"
+alias ubuntu='proot-distro login ubuntu --bind ~/dotfiles:/root/dotfiles'
