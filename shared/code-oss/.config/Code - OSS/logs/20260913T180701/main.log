@@ -1,0 +1,17 @@
+2026-09-13 18:07:01.904 [error] Error: Unable to retrieve mac address (unexpected format)
+    at KC (file:///data/data/com.termux/files/usr/lib/code-oss/resources/app/out/main.js:460:4634)
+    at eW (file:///data/data/com.termux/files/usr/lib/code-oss/resources/app/out/main.js:460:4958)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///data/data/com.termux/files/usr/lib/code-oss/resources/app/out/main.js:460:4877
+    at async yR (file:///data/data/com.termux/files/usr/lib/code-oss/resources/app/out/main.js:505:92873)
+    at async SR (file:///data/data/com.termux/files/usr/lib/code-oss/resources/app/out/main.js:505:93217)
+    at async Promise.all (index 0)
+    at async Ls.startup (file:///data/data/com.termux/files/usr/lib/code-oss/resources/app/out/main.js:561:10489)
+    at async Vb.startup (file:///data/data/com.termux/files/usr/lib/code-oss/resources/app/out/main.js:592:53892)
+2026-09-13 18:07:01.923 [info] StorageMainService: creating application shared storage
+2026-09-13 18:07:02.290 [info] [shared storage] Creating shared storage database at '/data/data/com.termux/files/home/.vscode-oss-shared/sharedStorage/state.vscdb' (wasCreated: true)
+2026-09-13 18:07:02.296 [info] [shared storage] Initializing fallback application storage (path: /data/data/com.termux/files/home/.config/Code - OSS/User/globalStorage/state.vscdb)
+2026-09-13 18:07:02.321 [info] [shared storage] Fallback application storage initialized with 3 items
+2026-09-13 18:07:02.325 [info] update#setState disabled
+2026-09-13 18:07:02.325 [info] update#ctor - updates are disabled as there is no update URL
+2026-09-13 18:09:29.342 [info] Extension host with pid 7854 exited with code: 0, signal: unknown.

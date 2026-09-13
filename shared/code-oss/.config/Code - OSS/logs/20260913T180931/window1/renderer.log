@@ -1,0 +1,11 @@
+2026-09-13 18:09:34.637 [info] Started local extension host with pid 9626.
+2026-09-13 18:09:35.908 [error] Extension 'ms-python.debugpy CANNOT USE these API proposals 'portsAttributes, debugVisualization, contribViewsWelcome'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2026-09-13 18:09:35.913 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, codeActionAI, notebookReplDocument, notebookVariableProvider'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2026-09-13 18:09:35.918 [error] Extension 'ms-python.vscode-python-envs CANNOT USE these API proposals 'terminalShellEnv, terminalDataWriteEvent, taskExecutionTerminal'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2026-09-13 18:09:35.964 [error] [vscode.mermaid-markdown-features]: Extension 'vscode.mermaid-markdown-features' CANNOT use 'legacyToolReferenceFullNames' without the 'chatParticipantPrivate' API proposal enabled
+2026-09-13 18:09:36.036 [error] [ms-python.python]: „editor/content“ ist ein vorgeschlagener Menübezeichner. Er erfordert „package.json#enabledApiProposals: ["contribEditorContentMenu"]“ und ist nur verfügbar, wenn er über Dev oder mit dem folgenden Befehlszeilenschalter ausgeführt wird: --enable-proposed-api ms-python.python
+2026-09-13 18:09:36.608 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-09-13 18:09:40.859 [info] [perf] Render performance baseline is 173ms
+2026-09-13 18:09:41.614 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-09-13 18:10:48.864 [error] Ein unbekannter Fehler ist aufgetreten. Weitere Details dazu finden Sie im Protokoll.
+2026-09-13 18:11:19.969 [info] Ignoring configured affinity for 'asvetliakov.vscode-neovim' because extension host(s) are already running. Reload window.

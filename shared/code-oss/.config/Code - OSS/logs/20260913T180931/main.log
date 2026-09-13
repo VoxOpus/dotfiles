@@ -1,0 +1,6 @@
+2026-09-13 18:09:31.729 [info] StorageMainService: creating application shared storage
+2026-09-13 18:09:31.729 [info] [shared storage] Creating shared storage database at '/data/data/com.termux/files/home/.vscode-oss-shared/sharedStorage/state.vscdb' (wasCreated: false)
+2026-09-13 18:09:31.729 [info] [shared storage] Initializing fallback application storage (path: /data/data/com.termux/files/home/.config/Code - OSS/User/globalStorage/state.vscdb)
+2026-09-13 18:09:31.796 [info] [shared storage] Fallback application storage initialized with 59 items
+2026-09-13 18:09:31.817 [info] update#setState disabled
+2026-09-13 18:09:31.818 [info] update#ctor - updates are disabled as there is no update URL
