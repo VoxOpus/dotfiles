@@ -1,5 +1,0 @@
-2026-09-13 18:09:38.164 [info] [main] Protokolliergrad: Info
-2026-09-13 18:09:38.164 [info] [main] Gefundenes Git wird überprüft in: "git"
-2026-09-13 18:09:38.164 [info] [main] Git "2.55.0" von "git" verwenden
-2026-09-13 18:09:38.164 [info] [Model][doInitialScan] Initial repository scan started
-2026-09-13 18:09:38.164 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
