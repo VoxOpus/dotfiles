@@ -12,6 +12,9 @@ fi
 export ZSH="$HOME/.config/zsh/oh-my-zsh"
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -117,10 +120,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate $HOME/.config/zsh/oh-my-zsh"
 alias c='clear'
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f "\({ZDOTDIR:-\)HOME/.config/zsh}/.p10k.zsh" ]] || source "\({ZDOTDIR:-\)HOME/.config/zsh}/.p10k.zsh"
-
-[[ -f "\({ZDOTDIR:-\)HOME/.config/zsh}/zsh_aliases" ]] && source "\({ZDOTDIR:-\)HOME/.config/zsh}/zsh_aliases"
+# Load external aliases
+[[ -f ~/.config/zsh/zsh_aliases ]] && source ~/.config/zsh/zsh_aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
