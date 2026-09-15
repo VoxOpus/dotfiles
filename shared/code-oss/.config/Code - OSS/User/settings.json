@@ -18,5 +18,8 @@
         "asvetliakov.vscode-neovim": 1
     },
     "workbench.iconTheme": "catppuccin-mocha",
-    "security.workspace.trust.startupPrompt": "always"
+    "security.workspace.trust.startupPrompt": "always",
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
+    "workbench.colorTheme": "Catppuccin Mocha"
 }
