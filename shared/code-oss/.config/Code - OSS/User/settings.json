@@ -1,5 +1,6 @@
 {
     "editor.fontSize": 12,
+    "editor.rulers": [72, 88],
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "github.copilot.nextEditSuggestions.enabled": false,
     "github.copilot.enable": {
@@ -21,5 +22,6 @@
     "security.workspace.trust.startupPrompt": "always",
     "git.confirmSync": false,
     "git.suggestSmartCommit": false,
-    "workbench.colorTheme": "Catppuccin Mocha"
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.minimap.enabled": false
 }
