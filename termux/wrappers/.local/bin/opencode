@@ -1,0 +1,2 @@
+#!/bin/bash
+proot-distro login ubuntu -- bash -c 'cd "$1" && shift && /root/.local/bin/opencode "$@"' -- "$PWD" "$@"
