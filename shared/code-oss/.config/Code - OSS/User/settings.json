@@ -1,0 +1,27 @@
+{
+    "editor.fontSize": 14,
+    "editor.rulers": [72, 88],
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "github.copilot.chat.organizationCustomAgents.enabled": false,
+    "github.copilot.chat.organizationInstructions.enabled": false,
+    "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
+    "chat.tips.enabled": false,
+    "workbench.startupEditor": "none",
+    "workbench.layoutControl.enabled": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.iconTheme": "catppuccin-mocha",
+    "security.workspace.trust.startupPrompt": "always",
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.minimap.enabled": false
+}

@@ -1,0 +1,10 @@
+android-studio
+cine
+exercism-bin
+goose-desktop-bin
+pods
+python-grip
+ttf-meslo-nerd-font-powerlevel10k
+ttf-symbola
+yay-bin
+yay-bin-debug

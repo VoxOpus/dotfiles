@@ -1,0 +1,7 @@
+arch-laptop/opencode/.config/opencode/service.json
+
+*/goose/.config/goose/*_oauth
+*/goose/.config/goose/secrets*
+*/goose/.config/goose/mcp-apps-cache/
+*/goose/.config/goose/tls/
+*/goose/.config/goose/chatgpt_codex/

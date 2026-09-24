@@ -1,0 +1,1 @@
+alias ssh_webui='ssh -L 8080:localhost:8080 -L 8081:localhost:8081 -L 8082:localhost:8082 termux -t "proot-distro login ubuntu --bind ~/dotfiles:/root/dotfiles"'
