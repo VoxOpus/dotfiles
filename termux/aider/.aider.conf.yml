@@ -1,0 +1,21 @@
+##########################################################
+# Aider configuration for Termux / PRoot environment
+##########################################################
+
+# Model settings (uncomment or override via CLI / environment)
+# model: gemini/gemini-2.5-flash
+
+# UI & Display
+dark-mode: true
+pretty: true
+stream: true
+
+# Git settings
+auto-commits: true
+attribute-author: true
+attribute-committer: true
+attribute-co-authored-by: true
+
+# Analytics & Updates
+analytics-disable: true
+check-update: false

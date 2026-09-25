@@ -5,3 +5,6 @@ arch-laptop/opencode/.config/opencode/service.json
 */goose/.config/goose/mcp-apps-cache/
 */goose/.config/goose/tls/
 */goose/.config/goose/chatgpt_codex/
+
+.aider*
+!.aider.conf.yml
