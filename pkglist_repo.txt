@@ -7,7 +7,6 @@ bats
 bluez
 bluez-utils
 clang
-cmake
 cups
 cups-pk-helper
 docker-buildx
