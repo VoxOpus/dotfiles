@@ -1,0 +1,9 @@
+cine
+exercism-bin
+opencode-beta
+pods
+python-grip
+ttf-meslo-nerd-font-powerlevel10k
+ttf-symbola
+yay-bin
+yay-bin-debug

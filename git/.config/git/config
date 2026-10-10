@@ -1,0 +1,6 @@
+[user]
+	name = VoxOpus
+	email = nathanieldenisludtke@gmail.com
+[core]
+	editor = micro
+	hooksPath = .githooks

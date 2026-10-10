@@ -1,0 +1,1 @@
+# Dotfiles: XDG-Compliant & Stow-Ready

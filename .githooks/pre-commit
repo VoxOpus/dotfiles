@@ -1,0 +1,33 @@
+#!/usr/bin/env zsh
+
+# Always execute in the repository root directory
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT" || exit 1
+
+echo "pre-commit: Analyzing environment for package list backup..."
+
+# Arch Linux laptop (main system)
+TARGET_HOSTNAME="arch-laptop"
+CURRENT_HOSTNAME=$(uname -n)
+
+if command -v pacman &> /dev/null && [[ "$CURRENT_HOSTNAME" == "$TARGET_HOSTNAME" ]]; then
+    echo "pre-commit: Arch Linux (main system) detected."
+    # Dump package lists directly into the repository root and stage them
+    pacman -Qqen | sort -u > pkglist_repo.txt && \
+    pacman -Qqem | sort -u > pkglist_aur.txt && \
+    git add pkglist_repo.txt pkglist_aur.txt
+fi
+
+# Termux host
+if [[ -n "$TERMUX_VERSION" ]]; then
+    echo "pre-commit: Termux host detected."
+    
+    # Native Termux package backup directly into the repository root
+    if command -v pkg &> /dev/null; then
+        pkg list-installed 2>/dev/null | awk -F/ 'NR>1 {print $1}' | sort -u > pkglist_termux.txt && \
+        git add pkglist_termux.txt
+    fi
+fi
+
+echo "pre-commit: Package lists successfully updated and staged."
+exit 0
