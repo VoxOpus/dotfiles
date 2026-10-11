@@ -33,7 +33,7 @@ path=(
 	"$CARGO_HOME/bin"
 	"$BUN_INSTALL/bin"
 	"$EMACSDIR/bin"
-    "$GOPATH/bin
+    "$GOPATH/bin"
     "$XDG_DATA_HOME/npm/bin"
 	$path
 )
