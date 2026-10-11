@@ -3,6 +3,7 @@ attr
 bash
 brotli
 bzip2
+c-ares
 ca-certificates
 clang
 command-not-found
@@ -23,6 +24,7 @@ gawk
 gdbm
 git
 glib
+golang
 gpgv
 grep
 gzip
@@ -55,6 +57,7 @@ libgmp
 libgnutls
 libgpg-error
 libiconv
+libicu
 libidn2
 libllvm
 liblz4
@@ -89,6 +92,8 @@ ncurses
 ncurses-ui-libs
 ndk-sysroot
 net-tools
+nodejs-lts
+npm
 openssh
 openssh-sftp-server
 openssl
@@ -120,8 +125,10 @@ termux-exec
 termux-keyring
 termux-licenses
 termux-tools
+tmux
 tree-sitter
 unzip
+utf8proc
 util-linux
 xxhash
 xz-utils

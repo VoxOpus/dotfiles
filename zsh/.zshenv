@@ -13,6 +13,7 @@ export BUN_INSTALL="$XDG_DATA_HOME/bun"
 export ANDROID_USER_HOME="$XDG_DATA_HOME/android"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
+export NPM_CONFIG_PREFIX="$XDG_DATA_HOME/npm"
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export _JAVA_OPTIONS="-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
@@ -32,7 +33,8 @@ path=(
 	"$CARGO_HOME/bin"
 	"$BUN_INSTALL/bin"
 	"$EMACSDIR/bin"
-    "$GOPATH/bin"
+    "$GOPATH/bin
+    "$XDG_DATA_HOME/npm/bin"
 	$path
 )
 export PATH
