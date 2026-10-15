@@ -7,6 +7,7 @@ bats
 bluez
 bluez-utils
 clang
+cmake
 cups
 cups-pk-helper
 docker-buildx
@@ -22,6 +23,7 @@ firefox-developer-edition
 git
 github-cli
 go
+gopls
 graphviz
 gst-plugin-pipewire
 htop
@@ -52,6 +54,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plasma-meta
+pnpm
 podman
 podman-compose
 power-profiles-daemon
@@ -72,6 +75,7 @@ tealdeer
 tesseract-data-deu
 tesseract-data-eng
 timeshift
+tmux
 tree
 ttf-dejavu
 ttf-liberation
@@ -82,6 +86,7 @@ unzip
 uv
 vscode-json-languageserver
 vulkan-radeon
+webkit2gtk-4.1
 wget
 wireplumber
 wireshark-qt
