@@ -1,0 +1,37 @@
+{
+  "lastChangelogVersion": "1.5.0",
+  "hideThinkingBlock": true,
+  "defaultProvider": "openai",
+  "defaultModel": "gpt-6-luna",
+  "packages": [
+    "npm:pi-web-access",
+    "npm:@dietrichgebert/ponytail"
+  ],
+  "theme": "system",
+  "externalEditor": "emacsclient -t",
+  "editorPaddingX": 0,
+  "markdown": {
+    "mermaid": "off"
+  },
+  "defaultThinkingLevel": "high",
+  "compaction": {
+    "enabled": true
+  },
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.47.0"
+  },
+  "enabledModels": [
+    "openai/gpt-5.4-mini",
+    "openai/gpt-5.4",
+    "openai/gpt-6-luna",
+    "openai/gpt-6.1-terra",
+    "openai/gpt-6.1-sol",
+    "google/gemini-flash-lite-latest",
+    "google/gemini-flash-latest",
+    "google/gemini-pro-latest",
+    "google/gemini-4-argon",
+    "anthropic/claude-haiku-5-5",
+    "anthropic/claude-sonnet-5-5",
+    "anthropic/claude-opus-5-5"
+  ]
+}

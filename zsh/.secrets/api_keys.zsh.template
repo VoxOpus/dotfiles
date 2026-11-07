@@ -1,0 +1,8 @@
+export GEMINI_API_KEY="insert_here"
+export OPENAI_API_KEY="insert_here"
+export ANTHROPIC_API_KEY="insert_here"
+export OPENROUTER_API_KEY="insert_here"
+export GITHUB_TOKEN="insert_here"
+export MCPO_API_KEY="insert_here"
+export SUPERGATEWAY_API_KEY="insert_here"
+export TYPESAFE_API_KEY="insert_here"
