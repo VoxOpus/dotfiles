@@ -24,6 +24,7 @@ avahi
 avahi-libs
 bash
 bash-completion
+bat
 binutils
 bluez
 brcmfmac-firmware
@@ -47,6 +48,8 @@ console-login-helper-messages
 console-login-helper-messages-issuegen
 console-login-helper-messages-motdgen
 console-login-helper-messages-profile
+containerd.io
+container-selinux
 coreutils
 coreutils-common
 cpio
@@ -79,6 +82,11 @@ dnf5
 dnf5-plugins
 dnf-data
 dns-root-data
+docker-buildx-plugin
+docker-ce
+docker-ce-cli
+docker-ce-rootless-extras
+docker-compose-plugin
 dosfstools
 dracut
 dracut-config-generic
@@ -101,6 +109,7 @@ enchant2
 exfatprogs
 expat
 f2fs-tools
+fastfetch
 fd-find
 fdk-aac-free
 fedora-gpg-keys
@@ -209,7 +218,11 @@ inih
 initscripts-service
 intel-audio-firmware
 intel-gpu-firmware
+intel-npu-firmware
 iproute
+iptables-legacy
+iptables-legacy-libs
+iptables-libs
 iputils
 jansson
 jbig2dec-libs
@@ -238,6 +251,7 @@ langpacks-fonts-en
 lasi
 lcms2
 less
+less-color
 libacl
 libaio
 libaom
@@ -271,6 +285,7 @@ libbytesize
 libcap
 libcap-ng
 libcbor
+libcgroup
 libcollection
 libcom_err
 libcomps
@@ -283,6 +298,7 @@ libdnf
 libdnf5
 libdnf5-cli
 libdnf5-plugin-expired-pgp-keys
+libdnf5-plugin-systemd-inhibit
 libdrm
 libeconf
 libedit
@@ -297,6 +313,7 @@ libfsverity
 libgcc
 libgccjit
 libgcrypt
+libgit2
 libglvnd
 libglvnd-glx
 libgomp
@@ -329,6 +346,9 @@ libmodulemd
 libmount
 libmpc
 libndp
+libnetfilter_conntrack
+libnfnetlink
+libnftnl
 libnghttp2
 libnghttp3
 libnl3
@@ -366,6 +386,7 @@ libsolv
 libsoup3
 libss
 libssh
+libssh2
 libssh-config
 libsss_certmap
 libsss_idmap
@@ -445,6 +466,7 @@ libyaml
 libyuv
 libzstd
 linux-firmware-whence
+llhttp
 llvm-filesystem
 llvm-libs
 lmdb-libs
@@ -483,6 +505,8 @@ netpbm
 nettle
 NetworkManager
 NetworkManager-libnm
+nftables
+nftables-services
 ngtcp2
 ngtcp2-crypto-ossl
 nilfs-utils
@@ -718,6 +742,7 @@ systemd-resolved
 systemd-shared
 systemd-sysusers
 systemd-udev
+tailscale
 tar
 tiwilink-firmware
 tpm2-tools
@@ -769,6 +794,7 @@ xxd
 xxhash-libs
 xz
 xz-libs
+yyjson
 zchunk-libs
 zlib-ng-compat
 zsh
