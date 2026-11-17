@@ -2,7 +2,8 @@
   "$schema": "https://opencode.ai/config.json",
   "model": "openai/gpt-6-luna",
   "plugins": [
-    "@dietrichgebert/ponytail"
+    "@dietrichgebert/ponytail",
+    "@upstash/context7-opencode"
   ],
   "mcp": {
     "servers": {
