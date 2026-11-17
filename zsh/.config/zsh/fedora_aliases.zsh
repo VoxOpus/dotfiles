@@ -1,0 +1,7 @@
+alias update='sudo dnf upgrade --refresh'
+alias owui-stop='docker compose --project-directory "$HOME/.config/open-webui" --env-file "$HOME/.config/open-webui/.env" -f "$HOME/.config/open-webui/compose.yaml" stop'
+alias owui-start='docker compose --project-directory "$HOME/.config/open-webui" --env-file "$HOME/.config/open-webui/.env" -f "$HOME/.config/open-webui/compose.yaml" up -d'
+alias lc-stop='docker compose --project-directory "$HOME/librechat" --env-file "$HOME/librechat/.env" -f "$HOME/librechat/docker-compose.yml" -f "$HOME/librechat/docker-compose.override.yml" stop'
+alias lc-start='docker compose --project-directory "$HOME/librechat" --env-file "$HOME/librechat/.env" -f "$HOME/librechat/docker-compose.yml" -f "$HOME/librechat/docker-compose.override.yml" up -d'
+alias cs-start='sudo systemctl start code-server@$USER'
+alias cs-stop='sudo systemctl stop code-server@$USER'

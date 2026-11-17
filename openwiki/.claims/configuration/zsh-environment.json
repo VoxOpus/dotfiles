@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:638c8172e21c902907e3fb02868bb8c2f3401e68f83029866666521fcd3dafe3",
+  "claims": [
+    {
+      "id": "claim_633628e60d7e418f9c6ef6be6c515b6f",
+      "statement": "The .zshenv defines XDG base directories, maps tools including pi-lens global data, per-project data and global configuration to XDG locations, and constructs the PATH.",
+      "evidence": [
+        {
+          "resource": "repo://zsh/.zshenv",
+          "version": "repo-file-v1:sha256:3fab267e8c2782ef2da2b5a5e84f6acfe185c873098941f4628b75e9999b08ea"
+        }
+      ]
+    },
+    {
+      "id": "claim_2603379d52bc46849f87716b7dc03321",
+      "statement": "The .zshrc file dynamically detects the operating environment and loads specific aliases such as termux_aliases.zsh, arch_aliases.zsh, or fedora_aliases.zsh accordingly.",
+      "evidence": [
+        {
+          "resource": "repo://zsh/.config/zsh/.zshrc",
+          "version": "repo-file-v1:sha256:1eeab77cb7db980681574814be6a8a987a8e0735a5eb348f402524df47064958"
+        }
+      ]
+    },
+    {
+      "id": "claim_9e70432c4a5b43d4a1645c46cdb1425a",
+      "statement": "The .zshrc conditionally sources ~/.secrets/api_keys.zsh for secrets management without tracking them in version control.",
+      "evidence": [
+        {
+          "resource": "repo://zsh/.config/zsh/.zshrc",
+          "version": "repo-file-v1:sha256:1eeab77cb7db980681574814be6a8a987a8e0735a5eb348f402524df47064958"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-12T03:43:47.041Z"
+  }
+}

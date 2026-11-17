@@ -1,0 +1,25 @@
+{
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "workbench.iconTheme": "catppuccin-frappe",
+    "telemetry.telemetryLevel": "off",
+    "chat.editor.enable": false,
+    "inlineChat.enable": false,
+    "workbench.experimental.chat.enable": false,
+    "github.copilot.enable": {
+        "*": false
+    },
+    "chat.extensionUnification.enabled": false,
+    "chat.disableAIFeatures": true,
+    "terminal.integrated.tabs.allowAgentCliTitle": false,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "json.schemaDownload.trustedDomains": {
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://json-schema.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://raw.githubusercontent.com": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://schemastore.azurewebsites.net/": true,
+        "https://www.schemastore.org/": true
+    }
+}

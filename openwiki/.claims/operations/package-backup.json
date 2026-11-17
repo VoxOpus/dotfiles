@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:d9ad412cfc9ba960469ad2120250458afb7631fb1ab9516edc9f819fc328f870",
+  "claims": [
+    {
+      "id": "claim_b3c59243af884ba3afcf3e194171a1d5",
+      "statement": "The pre-commit hook automates package list backups by detecting the environment and generating pkglist_repo.txt and pkglist_aur.txt for Arch Linux, pkglist_vps.txt for a VPS, or pkglist_termux.txt for Termux.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-commit",
+          "version": "repo-file-v1:sha256:f5220221d0ae3c320dc045211104854cf70b8855767be8992bf183b9d75ac875"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-11T22:47:10.023Z"
+  }
+}

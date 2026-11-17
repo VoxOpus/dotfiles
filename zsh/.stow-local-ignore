@@ -1,0 +1,3 @@
+(^|/)\.secrets(/|$)
+(^|/)api_keys\.zsh$
+.*\.template

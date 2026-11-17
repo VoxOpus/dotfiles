@@ -1,0 +1,38 @@
+#!/usr/bin/env zsh
+
+# Always execute in the repository root directory
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT" || exit 1
+
+echo "pre-commit: Analyzing environment for package list backup..."
+
+# arch-laptop
+TARGET_HOSTNAME="arch-laptop"
+CURRENT_HOSTNAME=$(uname -n)
+
+if command -v pacman &> /dev/null && [[ "$CURRENT_HOSTNAME" == "$TARGET_HOSTNAME" ]]; then
+    echo "pre-commit: arch-linux detected."
+    pacman -Qqen | sort -u > pkglist_repo.txt && \
+    pacman -Qqem | sort -u > pkglist_aur.txt && \
+    git add pkglist_repo.txt pkglist_aur.txt
+fi
+
+# cloud-vps
+if command -v rpm &> /dev/null && [[ "$CURRENT_HOSTNAME" == "cloud-vps" ]]; then
+    echo "pre-commit: cloud-vps detected."
+    packages=$(rpm -qa --qf '%{NAME}\n') || exit 1
+    printf '%s\n' "$packages" | sort -u > pkglist_vps.txt && \
+    git add pkglist_vps.txt || exit 1
+fi
+
+# termux
+if [[ -n "$TERMUX_VERSION" ]]; then
+    echo "pre-commit: termux detected."
+    if command -v pkg &> /dev/null; then
+        pkg list-installed 2>/dev/null | awk -F/ 'NR>1 {print $1}' | sort -u > pkglist_termux.txt && \
+        git add pkglist_termux.txt
+    fi
+fi
+
+echo "pre-commit: Package lists successfully updated and staged."
+exit 0

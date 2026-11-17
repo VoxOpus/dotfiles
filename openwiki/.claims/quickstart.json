@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:66258f1fb2ec6fed6bd328483be63a80640eec17df0d7ea488e841721a7c9694",
+  "claims": [
+    {
+      "id": "claim_1689c2c52760440fbc92feb09c44a6b2",
+      "statement": "The repository README describes the dotfiles as XDG-compliant and Stow-ready, and the pre-commit hook refreshes and stages package inventories for recognized Arch, cloud VPS, and Termux environments.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-commit#L7-L37",
+          "version": "repo-lines-v1:sha256:13f856cb7d9de0d2e7320da0b09528e330f95668ea6808929829b9c55467290c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxNGU0ODgwMDI4YTFlYTVhNDRlN2I5NTE4YjJjNzM3NjMxYjE0MTk3ZWY2NjA2YTc0ZGIxZGJiMzhjNDg3MTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjNDU4MGJiZWQzNGEzYjhiZjJkNmZkYzBhZTE3ZmI0MWQ4YTZlNGVkNThjZTM3MmM0ZGEyYjY4YjcxOTk0YWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY3YzhmZjdkMDQzOGM1NzhjMWZmMzQ0ZGMwMDBlY2ExM2YxOGEzMTE4MmExOTk1YmFmYWQ3ZWIyMWQ2OTYwMDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI4ZDNiOWU4ODBhNzc5NzU0OTNkYzdlMzU5MTQ0YzAyOTVhNGY2OTRjZmUwYWY0ZjkyOGMyMjMwN2JjNWMzMjAifQ"
+        },
+        {
+          "resource": "repo://README.md#L1-L1",
+          "version": "repo-lines-v1:sha256:684b2c3adbfa1e6f2a9f946015b1b2b2cb509ef8d23e63c90ec498108e5bff2f:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg0YjJjM2FkYmZhMWU2ZjJhOWY5NDYwMTViMWIyYjJjYjUwOWVmOGQyM2U2M2M5MGVjNDk4MTA4ZTViZmYyZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg0YjJjM2FkYmZhMWU2ZjJhOWY5NDYwMTViMWIyYjJjYjUwOWVmOGQyM2U2M2M5MGVjNDk4MTA4ZTViZmYyZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-11T23:18:43.570Z"
+  }
+}

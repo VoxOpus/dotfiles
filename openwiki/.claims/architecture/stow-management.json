@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4f1d2a046233756e41099ea7fd6e03c2c5360e6457376d32c1fc91b4d7baabd4",
+  "claims": [
+    {
+      "id": "claim_45079e96f52e4c58a941f117874d5140",
+      "statement": "The repository uses GNU Stow to manage and deploy dotfiles, organizing them into top-level directories that act as Stow packages.",
+      "evidence": [
+        {
+          "resource": "repo://README.md",
+          "version": "repo-file-v1:sha256:684b2c3adbfa1e6f2a9f946015b1b2b2cb509ef8d23e63c90ec498108e5bff2f"
+        }
+      ]
+    },
+    {
+      "id": "claim_06a14b7fb4c34b82828992e8179e9eee",
+      "statement": "The zsh package uses a .stow-local-ignore file to prevent Stow from symlinking templates, the .secrets/ directory, and api_keys.zsh.",
+      "evidence": [
+        {
+          "resource": "repo://zsh/.stow-local-ignore",
+          "version": "repo-file-v1:sha256:71873b9d7ea69e6bba95feabe3d1d6f64222d8937a1cbf2666d82f2c20e2f57a"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-11T22:47:10.023Z"
+  }
+}

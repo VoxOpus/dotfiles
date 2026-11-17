@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/stow-management.md": {
+      "gitHead": "44583b9e2240589da49ee3f80e2ae0f1998b09e4",
+      "sourceFingerprint": "sha256:89791164e9058d27badb706f30a49b9700fe511802e8dd39983f748381f3e00d",
+      "pageVersion": "sha256:4f1d2a046233756e41099ea7fd6e03c2c5360e6457376d32c1fc91b4d7baabd4",
+      "completedBy": "pi",
+      "completedRunId": "bb719d78-4fd5-4bd6-9917-8b3c8063238b"
+    },
+    "/openwiki/configuration/zsh-environment.md": {
+      "pageVersion": "sha256:638c8172e21c902907e3fb02868bb8c2f3401e68f83029866666521fcd3dafe3",
+      "completedBy": "pi",
+      "completedRunId": "84d366a4-3ae6-40e0-a018-4773a13a0c21",
+      "gitHead": "dce28640a2fb153f364e4fcd3f0d607242cf9414",
+      "sourceFingerprint": "sha256:4eb546d292fed97c549ad1cf8cb28139ca5857d1e0e2f0fe113b1e4ba156d508"
+    },
+    "/openwiki/operations/openwiki-maintenance.md": {
+      "gitHead": "81ed83b63563e634251bd1b1314452a4854be5c3",
+      "sourceFingerprint": "sha256:0d1b027ace41c74adb3461e6199eb042b67b88e0d7b99a1a8a63527dc86b3c1d",
+      "pageVersion": "sha256:d30d52065f083e77f08894bab282d795104e227fffdd33480f94f997196ca457",
+      "completedBy": "pi",
+      "completedRunId": "0fa7c7e1-ce69-4169-b259-1bf6e09fcaf0"
+    },
+    "/openwiki/operations/package-backup.md": {
+      "gitHead": "44583b9e2240589da49ee3f80e2ae0f1998b09e4",
+      "sourceFingerprint": "sha256:89791164e9058d27badb706f30a49b9700fe511802e8dd39983f748381f3e00d",
+      "pageVersion": "sha256:d9ad412cfc9ba960469ad2120250458afb7631fb1ab9516edc9f819fc328f870",
+      "completedBy": "pi",
+      "completedRunId": "bb719d78-4fd5-4bd6-9917-8b3c8063238b"
+    },
+    "/openwiki/quickstart.md": {
+      "gitHead": "81ed83b63563e634251bd1b1314452a4854be5c3",
+      "sourceFingerprint": "sha256:0d1b027ace41c74adb3461e6199eb042b67b88e0d7b99a1a8a63527dc86b3c1d",
+      "pageVersion": "sha256:66258f1fb2ec6fed6bd328483be63a80640eec17df0d7ea488e841721a7c9694",
+      "completedBy": "pi",
+      "completedRunId": "0fa7c7e1-ce69-4169-b259-1bf6e09fcaf0"
+    }
+  }
+}

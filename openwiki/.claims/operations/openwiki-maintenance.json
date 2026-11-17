@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:d30d52065f083e77f08894bab282d795104e227fffdd33480f94f997196ca457",
+  "claims": [
+    {
+      "id": "claim_5350b9831c234411a2939529e6140bd6",
+      "statement": "OpenWiki is intended as just-in-time repository context rather than mandatory startup reading; retrieval is recommended when requested, when unfamiliar architecture or dependency behavior matters, or when source inspection leaves material uncertainty.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L5-L8",
+          "version": "repo-lines-v1:sha256:2960c4cbc822f40779c360d241fd214c60c03e43ebf9205d823c729d86f7ed45:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWRiNDYwNjYwZjRkNTBhMjVhY2E3Nzk2MTAwMmQzOTcwNWM2NDZkYzI2YThiZmE2NmFlNmY2OTA5NTljNjk1MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjRjZDU2ZjNmODQxYTEyOTE2MzVkM2M4MzUyMTBiMjViNTkxNTMyYzAxZTFlN2QxZTdiZWQ0YjI4NDFjNDYzNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWFmYjk2MDZmNWIwZDhmNjM0YjI2MDM3OGQ2ZWNlMjUzYjVjMTQ0N2E5YmYxZDA0OTM0OTQ0MGE4YjVlYmYwOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDhhMTMzOGFlN2QxMWM5NDRlODVjNTU0N2JiNmVmNDRlZTljMmNkZjA4ZDZjOWIwOTI3ZDgzMGIxNzFjYzBlNyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b34a5b379640439892be18510692d0e6",
+      "statement": "Repository source code and tests are authoritative, and OpenWiki brief unknowns or review items are verification gaps rather than automatic requirements; validation should be narrowly scoped while preserving complete failure output.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L11-L12",
+          "version": "repo-lines-v1:sha256:8ca5bb1072a6d0f45c86d7adab2737c384361844ab3eb6dddde54fbac71c7547:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmNiM2Q0YTQ2NjliZGM3YTQwZDk4MDc3MzVkZjYwOGJmZTMxZDM4NjA2N2M5OTliNzUwYWFjNjMyYzFiNmQzMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmNiMzA1ZGNiMTRkY2I0MTUzZTFhM2YyNTk0NjVjZWFkYWRjOWIwNDRhNzkzZGE0MjdkMmM0M2QzYTA5ZDQ5MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWM5MGE3YjU5ZmEwNjFhOTU2YzE5MTIxOTkyYWQ4ZDFmOTk2ZGMwOGE3YjQ1ODhlYjJjYjk4MzU0YjdmMTU0ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGIxYmVkMmMxZTE3NjVkNzgzZTEyY2EyMjBkM2JkZDU5Y2Q4N2U5NWNhZjg5ZDg5ZDljMjM5NWYwNWFjMGE1YiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d303ea2f803d4a03a94e5a8942f52751",
+      "statement": "After source changes, contributors should check the documented OpenWiki maintenance configuration and completed runs before relying on automatic updates, and prefer regeneration over manual edits to generated wiki pages unless explicitly asked.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L14-L14",
+          "version": "repo-lines-v1:sha256:9aff808ebd9a0adf17f73b133589836b915cae3b9ec892013ac2737449f30709:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWFmZjgwOGViZDlhMGFkZjE3ZjczYjEzMzU4OTgzNmI5MTVjYWUzYjllYzg5MjAxM2FjMjczNzQ0OWYzMDcwOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOWFmZjgwOGViZDlhMGFkZjE3ZjczYjEzMzU4OTgzNmI5MTVjYWUzYjllYzg5MjAxM2FjMjczNzQ0OWYzMDcwOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjZjYjMwYThmOTQ4MTMxNDkwODJmM2RjYjkxOWRiMTJmMjIwYjMxYTI5NWZiZWU5NTM1MWNmOGYxNGJhZGEyZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzA4OWRmOTNmOGJhNTdhNGRkYmZkOGYwMTM5NjJjMzk3OGNlNGRiNjgxOTljNGRhNjY2NjQ5YjA5OTZjZWRhOSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-11T23:18:43.570Z"
+  }
+}

@@ -1,0 +1,8 @@
+cine
+exercism-bin
+packet
+pods
+ttf-meslo-nerd-font-powerlevel10k
+ttf-symbola
+ventoy-bin
+yay-bin
