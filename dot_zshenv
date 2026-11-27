@@ -1,0 +1,26 @@
+# ------------------------------------------------------------------------------
+# ~/.zshenv - Minimal Zsh environment bootstrap
+# Loaded first by every Zsh instance (login, interactive, and non-interactive).
+# Keep this file pure, fast, and free of stdout output or side effects.
+# ------------------------------------------------------------------------------
+
+# 1. XDG Base Directory Specification (fallback applies if unset or empty)
+export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
+export XDG_DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
+export XDG_STATE_HOME="${XDG_STATE_HOME:-$HOME/.local/state}"
+export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
+
+# 2. Relocate Zsh configuration to XDG_CONFIG_HOME
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+# 3. Base PATH (deduplicated)
+typeset -gU path
+path=(
+  "$HOME/.local/bin"
+  $path
+)
+export PATH
+
+# 4. Core session defaults
+export EDITOR="${EDITOR:-micro}"
+export VISUAL="$EDITOR"

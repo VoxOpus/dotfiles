@@ -1,0 +1,53 @@
+# ------------------------------------------------------------------------------
+# ~/.config/zsh/.zshrc - Lean, modular interactive Zsh configuration
+# Framework-free (no Oh My Zsh) with Starship prompt.
+# ------------------------------------------------------------------------------
+
+# 1. Ensure XDG state and cache directories exist (interactive shells only)
+[[ -d "$XDG_STATE_HOME/zsh" ]] || mkdir -p "$XDG_STATE_HOME/zsh"
+[[ -d "$XDG_CACHE_HOME/zsh" ]] || mkdir -p "$XDG_CACHE_HOME/zsh"
+
+# 2. History settings (stored in XDG_STATE_HOME)
+export HISTFILE="$XDG_STATE_HOME/zsh/history"
+HISTSIZE=50000
+SAVEHIST=50000
+
+setopt APPEND_HISTORY          # Append to history file instead of overwriting
+setopt SHARE_HISTORY           # Share history across concurrent Zsh sessions
+setopt HIST_IGNORE_DUPS        # Skip consecutive duplicate commands
+setopt HIST_IGNORE_SPACE       # Omit commands prefixed with a leading space
+setopt HIST_REDUCE_BLANKS      # Strip superfluous blanks from recorded entries
+setopt INTERACTIVE_COMMENTS    # Allow '#' comments in interactive prompts
+setopt NO_BEEP                 # Silence terminal bell
+
+# 3. Completion system (cache stored in XDG_CACHE_HOME)
+autoload -Uz compinit
+compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-${ZSH_VERSION}"
+
+# Interactive menu selection and case-insensitive matching
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# 4. Load modular Zsh drop-in snippets (NULL_GLOB avoids errors when empty)
+for _conf in "$ZDOTDIR/conf.d"/*.zsh(N); do
+  [[ -r "$_conf" ]] && source "$_conf"
+done
+unset _conf
+
+# 5. Optional standalone plugin: zsh-autosuggestions
+# Managed declaratively via .chezmoiexternal.toml in XDG_DATA_HOME
+_zsh_plugins="$XDG_DATA_HOME/zsh/plugins"
+_autosuggest="$_zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+[[ -r "$_autosuggest" ]] && source "$_autosuggest"
+
+# 6. Prompt: Initialize Starship if installed
+if (( $+commands[starship] )); then
+  eval "$(starship init zsh)"
+fi
+
+# 7. Optional standalone plugin: zsh-syntax-highlighting
+# MUST stay last in .zshrc so all widgets and prompts are highlighted properly
+_highlight="$_zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+[[ -r "$_highlight" ]] && source "$_highlight"
+
+unset _zsh_plugins _autosuggest _highlight
