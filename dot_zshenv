@@ -26,3 +26,4 @@ export PATH
 # 4. Core session defaults
 export EDITOR="${EDITOR:-micro}"
 export VISUAL="$EDITOR"
+export COLORTERM="${COLORTERM:-truecolor}"
