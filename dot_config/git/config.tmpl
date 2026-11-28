@@ -1,0 +1,17 @@
+# ------------------------------------------------------------------------------
+# ~/.config/git/config - Minimal XDG-compliant global Git configuration
+# Machine-specific identity is injected from ~/.config/chezmoi/chezmoi.toml.
+# ------------------------------------------------------------------------------
+
+[user]
+    name = {{ .name | quote }}
+    email = {{ .email | quote }}
+
+[init]
+    defaultBranch = main
+
+[push]
+    autoSetupRemote = true
+
+[fetch]
+    prune = true

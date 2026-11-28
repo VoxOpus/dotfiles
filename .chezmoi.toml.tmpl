@@ -1,0 +1,71 @@
+{{- /*
+------------------------------------------------------------------------------
+.chezmoi.toml.tmpl - Machine-local chezmoi bootstrap template
+Evaluated during `chezmoi init` to generate ~/.config/chezmoi/chezmoi.toml.
+------------------------------------------------------------------------------
+*/ -}}
+{{- $osid := .chezmoi.os -}}
+{{- if hasKey .chezmoi "osRelease" -}}
+{{-   if hasKey .chezmoi.osRelease "id" -}}
+{{-     $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{-   end -}}
+{{- end -}}
+
+{{- $isAndroid := eq .chezmoi.os "android" -}}
+{{- $defaultRole := "server" -}}
+{{- if $isAndroid -}}
+{{-   $defaultRole = "mobile" -}}
+{{- else if eq $osid "linux-arch" -}}
+{{-   $defaultRole = "desktop" -}}
+{{- end -}}
+{{- $defaultGui := eq $defaultRole "desktop" -}}
+
+{{- /* Preserve existing values on non-interactive runs (`--init` without TTY). */ -}}
+{{- $name := "VoxOpus" -}}
+{{- if hasKey . "name" -}}{{- $name = .name -}}{{- end -}}
+{{- $email := "nathanieldenisludtke@gmail.com" -}}
+{{- if hasKey . "email" -}}{{- $email = .email -}}{{- end -}}
+{{- $role := $defaultRole -}}
+{{- if hasKey . "role" -}}{{- $role = .role -}}{{- end -}}
+{{- $hasGui := $defaultGui -}}
+{{- if hasKey . "hasGui" -}}{{- $hasGui = .hasGui -}}{{- end -}}
+{{- $hasNerdFont := true -}}
+{{- if hasKey . "hasNerdFont" -}}{{- $hasNerdFont = .hasNerdFont -}}{{- end -}}
+{{- $installPackages := false -}}
+{{- if hasKey . "installPackages" -}}{{- $installPackages = .installPackages -}}{{- end -}}
+
+{{- if stdinIsATTY -}}
+{{-   $name = promptStringOnce . "name" "Git user name" $name -}}
+{{-   $email = promptStringOnce . "email" "Git email address" $email -}}
+{{-   $roleChoices := list "desktop" "server" "mobile" -}}
+{{-   $role = promptChoiceOnce . "role" "Machine role" $roleChoices $role -}}
+{{-   $hasGui = promptBoolOnce . "hasGui" "Does this machine have a graphical desktop (GUI)" (eq $role "desktop") -}}
+{{-   $hasNerdFont = promptBoolOnce . "hasNerdFont" "Enable Nerd Font symbols" $hasNerdFont -}}
+{{-   $installPackages = promptBoolOnce . "installPackages" "Enable declarative package installation script" $installPackages -}}
+{{- end -}}
+# ------------------------------------------------------------------------------
+# ~/.config/chezmoi/chezmoi.toml - Machine-local chezmoi configuration
+# Generated automatically from .chezmoi.toml.tmpl via `chezmoi init`.
+# ------------------------------------------------------------------------------
+
+pager = "less -R"
+{{- if not $isAndroid }}
+# Ensure consistent 0644/0755 permissions on Linux (prevents umask 002 group-write leaks)
+umask = 0o022
+{{- end }}
+
+[edit]
+    command = "micro"
+{{- if $isAndroid }}
+    # Android SELinux blocks hardlinks between sourceDir and $TMPDIR
+    hardlink = false
+{{- end }}
+
+[data]
+    osid = {{ $osid | quote }}
+    role = {{ $role | quote }}
+    name = {{ $name | quote }}
+    email = {{ $email | quote }}
+    hasGui = {{ $hasGui }}
+    hasNerdFont = {{ $hasNerdFont }}
+    installPackages = {{ $installPackages }}
