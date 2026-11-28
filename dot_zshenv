@@ -14,9 +14,11 @@ export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # 3. Base PATH (deduplicated)
+# 3. Base PATH (deduplicated)
 typeset -gU path
 path=(
   "$HOME/.local/bin"
+  "$XDG_CONFIG_HOME/emacs/bin"
   $path
 )
 export PATH
